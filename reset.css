@@ -1,27 +1,53 @@
 /*
+  --------------------------------------
   Brian Poblete's CSS Reset
   
-  Inspired by Josh Comeau's CSS Reset and Andy Bell's CSS Reset
+  Inspired by Josh Comeau's CSS Reset, Andy Bell's CSS Reset,
+  and Kevin Powell's recommendations.
+
   https://www.joshwcomeau.com/css/custom-css-reset/
   https://andy-bell.co.uk/a-modern-css-reset/
+  https://www.youtube.com/watch?v=cCAtD_BAHNw
+  
+  ---------------------------------------
 */
+
+
+/* Set border-box for more consistent sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
+/* Nuke default margins and padding. Use default font. */
 * {
   margin: 0;
+  padding: 0;
+  font: inherit;
 }
+
+/* Set a min-height as small viewport height for mobile browser.*/
+/* Fallbacks for unsupported browsers. */
 html,
 body {
-  height: 100%;
+  min-height: 100%;
+  min-height: 100dvh;
+  min-height: 100svh;
 }
+
+/* Enabled color scheme. Enable hanging punctuation for supported browsers. */
+html {
+  color-scheme: dark light;
+  hanging-punctuation: first last;
+}
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeSpeed;
 }
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role="list"],
 ol[role="list"] {
@@ -33,6 +59,7 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
+/* Make styling media more consistent */
 img,
 picture,
 video,
@@ -41,12 +68,8 @@ svg {
   display: block;
   max-width: 100%;
 }
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
+
+/* Allow breaking in middle of long words. */
 p,
 h1,
 h2,
@@ -55,6 +78,29 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+
+/* Multi-line headers have even lines. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* Prevent orphans in normal text. */
+li,
+p {
+  text-wrap: pretty;
+}
+
+/* Smooth scroll for jumping within a page. */
+@media (prefers-reduced-motion: no-preference) {
+  :has(:target) {
+    scroll-behavior: smooth;
+  }
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -73,6 +119,7 @@ h6 {
   }
 }
 
+/* Creates a new stacking context. */
 #root,
 #__next {
   isolation: isolate;
