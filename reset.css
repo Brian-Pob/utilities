@@ -20,10 +20,19 @@
   box-sizing: border-box;
 }
 
-/* Nuke default margins and padding. Use default font. */
+/* Nuke default margins. */
 * {
   margin: 0;
+}
+
+/*   You may want to remove paddings and set min-width for everything too. */
+/* * {
   padding: 0;
+  min-width: 0;
+} */
+
+/* Inherit fonts for input related elements. */
+input, button, textarea, select {
   font: inherit;
 }
 
