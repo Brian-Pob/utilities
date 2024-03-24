@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utilities</title>
+
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
+
+    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png" />
+    <link rel="mask-icon" href="/mask-icon.svg" color="#FFFFFF" />
+    <meta name="theme-color" content="#1a1a1a" />
+
+    <meta property="title" content="Brian Poblete's HTML Template" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/dvivrw9ml/image/upload/v1709610183/og-banner-plain-no-tag_jh0wrb.png"
+    />
+    <meta property="og:url" content="https://brianmp.dev" />
+    <meta property="og:title" content="Brian Poblete's HTML Template" />
+    <meta
+      property="og:description"
+      content="A simple HTML template for personal projects. Includes meta tags for social media sharing and PWA support."
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@brianmpdotdev" />
+    <meta property="twitter:domain" content="brianmp.dev" />
+    <meta property="twitter:url" content="https://brianmp.dev" />
+    <meta name="twitter:title" content="Brian Poblete's HTML Template" />
+    <meta
+      name="twitter:description"
+      content="A simple HTML template for personal projects. Includes meta tags for social media sharing and PWA support."
+    />
+    <meta
+      name="twitter:image"
+      content="https://res.cloudinary.com/dvivrw9ml/image/upload/v1709610183/og-banner-plain-no-tag_jh0wrb.png"
+    />
+    <meta name="twitter:image:alt" content="Brian Poblete's HTML Template" />
+    <meta name="twitter:creator" content="@brianmpdotdev" />
+  </head>
+
+  <style>
+    @import url("https://unpkg.com/open-props@1.6.21/open-props.min.css");
+    @import url("https://unpkg.com/open-props@1.6.21/normalize.min.css");
+
+    a:hover {
+      outline: var(--size-0, 0.125rem) solid var(--blue-5, Highlight);
+      outline-offset: var(--size-1);
+      border-radius: var(--size-0, 0.125rem);
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+    }
+
+    p {
+      margin: 2rem auto;
+    }
+
+    main {
+      max-width: 80ch;
+      margin: 0 auto;
+    }
+
+    section {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      max-width: 100vw;
+      row-gap: var(--size-5, 1rem);
+    }
+  </style>
+
+  <body>
+    <main>
+      <h1>My HTML template.</h1>
+      <p>
+        Basic HTML template with meta tags for social media sharing and PWA
+        support. Start by deleting all of this HTML in the body and style tags.
+        Then replace the meta tags with your own information.
+      </p>
+
+      <h2>Recommended utilities:</h2>
+      <section>
+        <!-- Tooling: Vite, Vite PWA, Bun, pnpm, fnm -->
+        <ul>
+          <h3>Tooling</h3>
+          <li>
+            <a href="https://vitejs.dev/">Vite</a>
+          </li>
+          <li>
+            <a href="https://vite-pwa-org.netlify.app/">Vite PWA</a>
+          </li>
+          <li>
+            <a href="https://bun.sh/">Bun</a>
+          </li>
+          <li>
+            <a href="https://pnpm.io/">pnpm</a>
+          </li>
+          <li>
+            <a href="fnm.vercel.app">fnm</a>
+          </li>
+        </ul>
+
+        <!-- Frameworks: Astro, SolidJS, Alpine JS, HTMX, Svelte/ SvelteKit, React -->
+        <ul>
+          <h3>Frameworks</h3>
+          <li>
+            <a href="https://astro.build/">Astro</a>
+          </li>
+          <li>
+            <a href="https://solidjs.com/">SolidJS</a>
+          </li>
+          <li>
+            <a href="https://svelte.dev/">Svelte</a>
+          </li>
+          <li>
+            <a href="https://kit.svelte.dev/">SvelteKit</a>
+          </li>
+          <li>
+            <a href="https://reactjs.org/">React</a>
+          </li>
+          <li>
+            <a href="https://alpinejs.dev/">Alpine JS</a>
+          </li>
+          <li>
+            <a href="https://htmx.org/">HTMX</a>
+          </li>
+        </ul>
+
+        <ul>
+          <h3>Styling</h3>
+          <li>
+            <a href="https://open-props.style/">Open Props</a>
+          </li>
+          <li>
+            <a href="https://tailwindcss.com/">Tailwind CSS</a>
+          </li>
+          <li>
+            <a href="https://picocss.com/">Pico CSS</a>
+          </li>
+          <li>
+            <a href="https://heroicons.com/">Heroicons</a>
+          </li>
+          <li>
+            <a href="https://phosphoricons.com/"> Phosphor Icons</a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/Brian-Pob/utilities/blob/main/reset.css/"
+              >Brian Poblete's CSS reset</a
+            >
+          </li>
+          <li>
+            <a href="https://postcss.org/"> PostCSS</a>
+          </li>
+          <li>
+            <a href="https://sass-lang.com/">Sass</a>
+          </li>
+        </ul>
+
+        <!-- Development: VS Code, Zed, Neovim, Vim, Prettier, Warp, Tabby, CodeWhisperer -->
+        <ul>
+          <h3>Development</h3>
+          <li>
+            <a href="https://code.visualstudio.com/">VS Code</a>
+          </li>
+          <li>
+            <a href="https://zed.dev/">Zed</a>
+          </li>
+          <li>
+            <a href="https://neovim.io/">Neovim</a>
+          </li>
+          <li>
+            <a href="https://www.vim.org/">Vim</a>
+          </li>
+          <li>
+            <a href="https://prettier.io/">Prettier</a>
+          </li>
+          <li>
+            <a href="https://warp.dev/">Warp</a>
+          </li>
+          <li>
+            <a href="https://tabby.sh/">Tabby</a>
+          </li>
+          <li>
+            <a
+              href="https://aws.amazon.com/blogs/devops/introducing-amazon-codewhisperer-for-command-line/"
+              >CodeWhisperer</a
+            >
+          </li>
+        </ul>
+
+        <!-- Hosting: Vercel, Cloudflare Pages, GitHub Pages, Netlify -->
+        <ul>
+          <h3>Hosting</h3>
+          <li>
+            <a href="https://vercel.com/">Vercel</a>
+          </li>
+          <li>
+            <a href="https://pages.cloudflare.com/">Cloudflare Pages</a>
+          </li>
+          <li>
+            <a href="https://pages.github.com/">GitHub Pages</a>
+          </li>
+          <li>
+            <a href="https://www.netlify.com/">Netlify</a>
+          </li>
+        </ul>
+
+        <!-- Image creation and management: Canva, Figma, Cloudinary, Excalidraw -->
+        <ul>
+          <h3>Image creation and management</h3>
+          <li>
+            <a href="https://www.canva.com/">Canva</a>
+          </li>
+          <li>
+            <a href="https://www.figma.com/">Figma</a>
+          </li>
+          <li>
+            <a href="https://cloudinary.com/">Cloudinary</a>
+          </li>
+          <li>
+            <a href="https://excalidraw.com/">Excalidraw</a>
+          </li>
+        </ul>
+
+        <!-- Testing:  SocialSharePreview, CoyWolf OG Checker, Wappalyzer, WAVE Accessibility Tool -->
+        <ul>
+          <h3>Testing</h3>
+          <li>
+            <a href="https://socialsharepreview.com/">SocialSharePreview</a>
+          </li>
+          <li>
+            <a href="https://coywolf.pro/social/open-graph-checker/">CoyWolf OG Checker</a>
+          </li>
+          <li>
+            <a href="https://www.wappalyzer.com/">Wappalyzer</a>
+          </li>
+          <li>
+            <a href="https://wave.webaim.org/">WAVE Accessibility Tool</a>
+          </li>
+        </ul>
+
+        <!-- Version control & SCM: GitHub, GitLab -->
+        <ul>
+          <h3>Version control & SCM</h3>
+          <li>
+            <a href="https://github.com">GitHub</a>
+          </li>
+          <li>
+            <a href="https://gitlab.com">GitLab</a>
+          </li>
+        </ul>
+
+        <!-- Browsers: Arc, Firefox -->
+        <ul>
+          <h3>Browsers</h3>
+          <li><a href="https://arc.net">Arc</a></li>
+          <li><a href="https://www.mozilla.org/firefox/">Firefox</a></li>
+
+        </ul>
+
+        <!-- AI Toos: GitHub Copilot, ChatGPT, Google Gemini, Anthropic Claude -->
+        <ul>
+          <h3>AI Tools</h3>
+          <li><a href="https://copilot.github.com/">GitHub Copilot</a></li>
+          <li><a href="https://chat.openai.com/">ChatGPT</a></li>
+          <li><a href="https://gemini.google.com">Google Gemini</a></li>
+          <li><a href="https://claude.ai/chats/">Anthropic Claude</a></li>
+        </ul>
+
+        <!-- VMs and Containers: VirtualBox, VMWare, Docker, Podman -->
+        <ul>
+          <h3>VMs and Containers</h3>
+          <li><a href="https://www.virtualbox.org/">VirtualBox</a></li>
+          <li><a href="https://www.vmware.com/">VMWare</a></li>
+          <li><a href="https://www.docker.com/">Docker</a></li>
+          <li><a href="https://podman.io/">Podman</a></li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
