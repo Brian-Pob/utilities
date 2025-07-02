@@ -115,3 +115,6 @@ map gd :bd<cr>
 
 " Clear highlight
 map <C-h> :noh<cr>
+
+" Make x delete without copying to the register
+nnoremap x "_x
